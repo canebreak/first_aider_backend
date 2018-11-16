@@ -23,7 +23,7 @@ public class BackendApplicationTests {
 	public void checkDatabaseConnectionTest()
 	{
 		log.debug("Starting connection");
-		String dummy = jdbcTemplate.queryForObject("SELECT dummy FROM dual", String.class);
+		String dummy = jdbcTemplate.queryForObject("SELECT * FROM users", String.class);
 		log.debug("dummy={}", dummy);
 
 	}
