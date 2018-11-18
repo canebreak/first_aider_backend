@@ -1,5 +1,5 @@
 package com.firstaid.backend.Model;
 
-public class Location
+public class Event
 {
 }
