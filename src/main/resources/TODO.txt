@@ -1,0 +1,2 @@
+//TODO: Add date when row is deleted -- PRIORITY: low
+//TODO: Create relation storedEvents and export it to file from time to time -- PRIORITY: Low
