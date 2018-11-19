@@ -22,15 +22,6 @@ public class BackendApplicationTests {
 	}
 
 	@Test
-	public void checkDatabaseConnectionTest()
-	{
-		log.debug("Starting connection");
-		String dummy = jdbcTemplate.queryForObject("SELECT first_name FROM users", String.class);
-		log.debug("dummy={}", dummy);
-	}
-
-
-	@Test
 	public void addUser(){
 		String first_name = "Test 4";
 		String last_name = "Test 4";
@@ -41,15 +32,15 @@ public class BackendApplicationTests {
 	}
 	@Test
 	public void addRole(){
-		String name = "user";
-		String role_code = "ROLE_USER";
+		String name = "guest";
+		String role_code = "ROLE_GUEST";
 		String sql = ResourceHelper.getResourceText("/sql/add_role.sql");
 		jdbcTemplate.update(sql, name, role_code);
 	}
 	@Test
 	public void addEventType(){
-		String name = "car accident";
-		String event_code = "CAR_ACCIDENT";
+		String name = "dead body";
+		String event_code = "DEAD_BODY";
 		String sql = ResourceHelper.getResourceText("/sql/add_event_type.sql");
 		jdbcTemplate.update(sql, name, event_code);
 	}

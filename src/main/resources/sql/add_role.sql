@@ -1,2 +1,2 @@
-INSERT INTO roles(name, role_code)
-VALUES (?, ?)
+INSERT INTO roles(name, code, is_deleted)
+VALUES (?, ?, 0)
