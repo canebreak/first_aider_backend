@@ -18,9 +18,10 @@ public class LongLat
 	{
 	}
 
-	public LongLat(double longitude, double latitude)
+	public LongLat(double latitude, double longitude)
 	{
 		this.longitude = longitude;
 		this.latitude = latitude;
 	}
+
 }

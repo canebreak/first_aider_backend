@@ -4,14 +4,11 @@ import com.firstaid.backend.Model.User;
 
 import java.util.List;
 
-public interface UserService
-{
- //TODO: Obrisati interfejs, previse je uopsten
-	//login
+public interface UserService {
 
-	// register via Facebook, Google, Twitter = not to be implemented YET!!!!
+    public User login(User user);
 
-	//first register via EMAIL ONLY
+    public User register();
 
 
 }

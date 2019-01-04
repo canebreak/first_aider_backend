@@ -16,4 +16,5 @@ public class User
 	private LocalDate birthday;
 	private String email;
 	private List<Role> roles;
+	private String password;
 }
