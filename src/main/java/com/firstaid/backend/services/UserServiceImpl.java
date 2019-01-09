@@ -19,7 +19,10 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User register() {
-        return null;
+    public User register(User user) {
+        String sqlInsertUser = ResourceHelper.getResourceText("sql/add_user.sql");
+        jdbcTemplate.update(sqlInsertUser, user.getFirstName(), user.getLastName(), user.getPassword());
+
+        return user;
     }
 }

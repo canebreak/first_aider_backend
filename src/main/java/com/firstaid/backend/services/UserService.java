@@ -8,7 +8,7 @@ public interface UserService {
 
     public User login(User user);
 
-    public User register();
+    public User register(User user);
 
 
 }

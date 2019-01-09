@@ -87,8 +87,7 @@ public class BackendApplicationTests {
             if (longLatList.get(i).getLatitude() < userLocation.getLatitude() + lat &&
                     (longLatList.get(i).getLatitude() > userLocation.getLatitude() - lat)) {
                 if (longLatList.get(i).getLongitude() < userLocation.getLongitude() + lon &&
-                        (longLatList.get(i).getLongitude() > userLocation.getLongitude() - lon))
-                {
+                        (longLatList.get(i).getLongitude() > userLocation.getLongitude() - lon)) {
                     res.add(longLatList.get(i));
                 }
             }
